@@ -683,7 +683,7 @@ F 3 "~" H 4650 6070 50  0001 C CNN
 	1    4650 6070
 	1    0    0    -1  
 $EndComp
-Text Notes 3450 6470 2    50   ~ 0
+Text Notes 3450 6370 2    50   ~ 0
 grey
 Text Notes 3460 5875 2    50   ~ 0
 white
@@ -857,8 +857,6 @@ Wire Wire Line
 Wire Wire Line
 	4450 5870 3500 5870
 Wire Wire Line
-	4450 6470 3500 6470
-Wire Wire Line
 	4450 6070 3500 6070
 Wire Wire Line
 	4450 6170 3500 6170
@@ -867,7 +865,7 @@ Wire Wire Line
 Wire Wire Line
 	4950 5870 5600 5870
 Wire Wire Line
-	4950 6470 5600 6470
+	4950 6370 5600 6370
 Wire Wire Line
 	4950 6070 5600 6070
 Wire Wire Line
@@ -879,12 +877,12 @@ Wire Wire Line
 Wire Wire Line
 	4950 5670 5150 5670
 Wire Wire Line
-	4950 6370 5300 6370
+	4950 6470 5300 6470
 Text Label 3500 5970 0    50   ~ 0
 LSU1_Ip
 Text Label 3500 5870 0    50   ~ 0
 LSU1_Heater-
-Text Label 3500 6470 0    50   ~ 0
+Text Label 3500 6370 0    50   ~ 0
 LSU_Heater+
 Text Label 3500 6070 0    50   ~ 0
 LSU1_Vm
@@ -892,15 +890,15 @@ Text Label 3500 6170 0    50   ~ 0
 LSU1_Rtrim
 Text Label 3500 6270 0    50   ~ 0
 LSU1_Un
-Text Label 5050 6370 0    50   ~ 0
+Text Label 5050 6470 0    50   ~ 0
 CAN_H
-Text Label 4130 6370 0    50   ~ 0
+Text Label 4140 6470 0    50   ~ 0
 CAN_L
 Text Label 5290 5970 0    50   ~ 0
 LSU2_Ip
 Text Label 5100 5870 0    50   ~ 0
 LSU2_Heater-
-Text Label 5100 6470 0    50   ~ 0
+Text Label 5100 6370 0    50   ~ 0
 LSU_Heater+
 Text Label 5300 6070 0    50   ~ 0
 LSU2_Vm
@@ -914,7 +912,7 @@ Text Notes 3250 6170 0    50   ~ 0
 green
 Text Notes 3220 6070 0    50   ~ 0
 yellow
-Text Notes 5830 6480 2    50   ~ 0
+Text Notes 5830 6380 2    50   ~ 0
 grey
 Text Notes 5860 5890 2    50   ~ 0
 white
@@ -923,7 +921,7 @@ red
 Text Notes 980  4210 0    50   ~ 0
 Carrier board modified to support dual wideband LSU 4.9 sensors.\nSensor controller code must be modified to give each sensor a unique idendifier.\nBoth sensors share the CAN bus interface. No hardware changes required on the sensor modules.\nAdded bus termination using "Split Termination Concept" from NXP AN1014
 Text Notes 7490 7880 0    50   ~ 0
-01/17/2021
+02/06/2021
 Text Notes 6650 7730 0    50   ~ 10
 Dual Channel Wideband Controller
 $Comp
@@ -948,7 +946,7 @@ L Device:R R5
 U 1 1 600A0D2E
 P 8750 2280
 F 0 "R5" H 8820 2326 50  0000 L CNN
-F 1 "120" H 8820 2235 50  0000 L CNN
+F 1 "60" H 8820 2235 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 8680 2280 50  0001 C CNN
 F 3 "~" H 8750 2280 50  0001 C CNN
 F 4 "C23179" H 8750 2280 50  0001 C CNN "LCSC"
@@ -960,7 +958,7 @@ L Device:R R6
 U 1 1 600A5B18
 P 9460 2280
 F 0 "R6" H 9530 2326 50  0000 L CNN
-F 1 "120" H 9530 2235 50  0000 L CNN
+F 1 "60" H 9530 2235 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 9390 2280 50  0001 C CNN
 F 3 "~" H 9460 2280 50  0001 C CNN
 F 4 "C23179" H 9460 2280 50  0001 C CNN "LCSC"
@@ -1023,7 +1021,7 @@ F 3 "" H 4450 5770 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4130 6370 4450 6370
+	4140 6470 4450 6470
 $Comp
 L power:GND #PWR0116
 U 1 1 601593C6
@@ -1035,45 +1033,8 @@ F 3 "" H 4950 5770 50  0001 C CNN
 	1    4950 5770
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R7
-U 1 1 601867AB
-P 8750 2580
-F 0 "R7" H 8820 2626 50  0000 L CNN
-F 1 "120" H 8820 2535 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 8680 2580 50  0001 C CNN
-F 3 "~" H 8750 2580 50  0001 C CNN
-F 4 "C23179" H 8750 2580 50  0001 C CNN "LCSC"
-	1    8750 2580
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 60186C0C
-P 9460 2580
-F 0 "R8" H 9530 2626 50  0000 L CNN
-F 1 "120" H 9530 2535 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 9390 2580 50  0001 C CNN
-F 3 "~" H 9460 2580 50  0001 C CNN
-F 4 "C23179" H 9460 2580 50  0001 C CNN "LCSC"
-	1    9460 2580
-	0    1    1    0   
-$EndComp
+Text Notes 8720 2680 0    50   ~ 0
+CAN bus terminator
 Wire Wire Line
-	8600 2580 8380 2580
-Wire Wire Line
-	9610 2580 9830 2580
-Text Label 9610 2580 0    50   ~ 0
-CAN_H
-Text Label 8380 2580 0    50   ~ 0
-CAN_L
-Wire Wire Line
-	8900 2580 9100 2580
-Wire Wire Line
-	9090 2280 9100 2580
-Connection ~ 9100 2580
-Wire Wire Line
-	9100 2580 9310 2580
-Text Notes 8350 2990 0    50   ~ 0
-CAN bus terminator\nParallel resistors to support 1/2 watt dissipation
+	3500 6370 4450 6370
 $EndSCHEMATC
